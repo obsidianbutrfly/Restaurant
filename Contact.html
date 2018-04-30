@@ -1,41 +1,57 @@
 <!DOCTYPe html>
 <html>
     <head>
-        <Title> Restuarant Home</Title>
-        <style type="text/CSS">
+        <Title> Restuarant Contact</Title>
+        <link href="reststyles.css" 
+        rel="stylesheet"
+        type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
             textarea  {vertical-align: top; 
-            
+            }
+            .left{
+                position: left: ;
+            }
+            .center{
+               text-align: center;
+               font-weight:bold
             }
         </style>    
     </head>
     <body>
-            <h1 style="text-align:center"> Besser Good Food</h1>
+        <header>
+        <h1> Besser Good Food</h1>
+    </header>   
             <hr/>
-            <div align="left">
-            <h3>Navigation</h3>
-            <a href="index.html">Home</a>
-            <a href="Menu.html"> Menu</a>
-            <a href="Contact.html">Contact Us</a>
-        </div>
-            <hr/>
+            <div>    
+                <h3>Navigation</h3>
+                <ul class="nav nav-tabs-justified">
+                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li class="active"><a href="Menu.html">Menu</a></li>
+                <lI class="active"><a href="Contact.html">Contact</a></li>
+              </ul>
+             </div>
+             <hr/>
 
 
             <form actions="#" method="POST">
-                    <div>
-                        <p align="center">
+                    <div class="center">
+                        <p>
                         <label id="NameLabel" for="Name">Name: </label>
                         <input id="NameLabel" name="Name" type="text" />
                         </p>
                     </div>
                 </div>
-                <div>
-                        <p align="center">
+                <div class="center">
+                        <p>
                         <label id="EmailLabel" for="Email">Email: </label>
                         <input id="Email" name="Email" type="text" />  
                     </p>
                 </div>                
-                    <div>
-                        <p align="center">
+                    <div class="center">
+                        <p>
                         <label id="PhoneLabel" for="Phone">Phone: </label>
                         <input id="PhoneLabel" name="Phone" type="text" />
                     </p>
@@ -57,18 +73,20 @@
                         </div>                                    
                     <div align="center">
                         <br/>
-                    Have you been to the Restaurant?: 
+                    <b>Have you been to the Restaurant?:</b>
                     <input type="radio" name="answer" value="Yes"/>Yes                                                         
                     <input type="radio" name="answer" value="No"/>No
                     </div>
                     
 
                     <div align="center">
+                        <b>
                         <input type="checkbox" name="myChoices" value="M"/>M
                         <input type="checkbox" name="myChoices" value="T"/>T
                         <input type="checkbox" name="myChoices" value="W"/>W
                         <input type="checkbox" name="myChoices" value="TH"/>TH
                         <input type="checkbox" name="myChoices" value="F"/>F
+                    </b>
                     </div>
         
                     <div align="center">
@@ -79,10 +97,10 @@
     </body>
     <hr/>
     <footer>
-            <p style=text-align:center;>
+            <p>
                 123 Awesome Street Minneapolos,Minnesota 55404
             </p>
-            <p style=text-align:center;>
+            <p>
                 123-456-0978
             </p>
         </footer>
